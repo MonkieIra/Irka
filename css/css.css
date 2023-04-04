@@ -178,12 +178,11 @@ footer{
     padding-bottom: 50px;
     align-items: center;
 }
-footer nav ul{
+footer nav ul {
     list-style: none;
     display: flex;
     width: 160px;
-    justify-content:space-between;
-
+    justify-content: space-between;
 }
 .vk,
 .od,
