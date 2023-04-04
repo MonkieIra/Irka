@@ -119,7 +119,7 @@ section.recent .recent-card-container h3{
 section.recent .recent-card-container .desc{
     display: flex;
     justify-content: space-between;
-    width: 280px;
+    max-width: 280px;
 }
 section.recent .recent-card-container .desc  .line{
     width: 1px;
@@ -202,4 +202,61 @@ margin-bottom: 20px;
 }
 .tg{
     background-image:url('../img/tg.svg') ;
+}
+@media screen and (max-width:900px) {
+    .container{
+        max-width: 90%;
+    }
+    section.recent .recent-card-container{
+        max-width: 48%;
+    }
+    
+}
+@media screen and (max-width:678px) {
+    .content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .content .left{
+        width: 70%;
+        text-align: center;
+        align-items: center;
+        margin-top: 33px;
+    }
+    .content .left button{
+        margin-top: 36px;
+    }
+    section.works .works-h h3,
+    section.recent .recent-header h3{
+        text-align: center;
+    }
+    section.recent .recent-header{
+        justify-content: center;
+    }
+    section.recent a.all{
+        display: none;
+    }
+    section.recent .recent-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    section.recent .recent-card-container{
+        max-width: 354px;
+    }
+    section.works .works-card{
+        flex-direction: column;
+        max-width: 354px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section.works .works-card .desc{
+        min-height: 180px;
+        margin-top: 12px;
+    }
+    :root{
+        font-size: 14px;
+    }
+
+
+    
 }
