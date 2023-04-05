@@ -17,13 +17,16 @@ body, html{
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 2.75rem;
 }
 *{
     font-family: 'Heebo', sans-serif;
     box-sizing: border-box; 
     margin: 0;
     padding: 0;
+}
+p{
+    font-size: 16px;
 }
 h1,h2,h3,h4{
     color: var(--main-color);
@@ -62,8 +65,13 @@ header ul{
 }
 header ul li a{
     text-decoration: none;
-    color:black
+    color:var(--main-color)
 }
+header ul li a.active{
+    color:var(--primary-color)
+}
+
+
 .content{
     display: flex;
     justify-content: space-between;
@@ -96,6 +104,9 @@ section{
 section h3{
 font-size: 1.4rem;
 font-weight: 400;
+}
+.section-header h2{
+    font-size: 2.125rem;
 }
 section a.all{
 color: var(--secondary-color);
@@ -165,20 +176,48 @@ align-items: center;
 font-size: 1.875rem;
 font-weight: 700;
 }
-.works-card  .works-desc .desc .date{
+section.works .works-h .desc .date{
     width: 62px;
     height: 26px;
-    background-color: #142850;
+    background-color: var(--primary-color);
     border-radius: 16px;
     color: white;
     font-size: 1.125rem;
     font-weight: 900;
     text-align: center;
 }
-.works-card  .works-desc .desc  .tag{
+section.works .works-h .desc  .tag{
 font-size: 1.25rem;
 color: var(--grey-color);
 }
+
+section.works .works-h .desc{
+    display: flex;
+    justify-content:space-between;
+    width: 400px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+    .works-card  .works-desc h3{
+    font-size: 1.875rem;
+    font-weight: 700;
+    }
+    .works-card  .works-desc .desc .date{
+        width: 62px;
+        height: 26px;
+        background-color: #142850;
+        border-radius: 16px;
+        color: white;
+        font-size: 1.125rem;
+        font-weight: 900;
+        text-align: center;
+    }
+    .works-card  .works-desc .desc  .tag{
+    font-size: 1.25rem;
+    color: var(--grey-color);
+    }
+
 footer{
     height: 260px;
     display: flex;
@@ -212,6 +251,10 @@ margin-bottom: 20px;
 .tg{
     background-image:url('../img/tg.svg') ;
 }
+section.works .works-h .desc{
+    display: flex;
+}
+
 @media screen and (max-width:900px) {
     .container{
         max-width: 90%;
@@ -235,6 +278,10 @@ margin-bottom: 20px;
     }
     .content .left button{
         margin-top: 36px;
+    }
+    
+    section.works .works-h h1{
+        font-size: 2.75rem;
     }
     section.works .works-h h3,
     section.recent .recent-header h3{
