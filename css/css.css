@@ -225,6 +225,12 @@ section.recent.blogs .recent-container .recent-card-container{
     max-width: fit-content;
     min-height: auto;
     height: 200px;
+
+    border-bottom: 1px solid var(--border-grey);
+}
+
+section.recent.blogs .recent-container .recent-card-container  .desc p:nth-child(3){
+color: var(--grey-color);
 }
 
 section.works .works-h .desc{
